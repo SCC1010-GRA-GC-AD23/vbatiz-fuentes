@@ -1,5 +1,10 @@
+//https://www.dafont.com/
+
+let miFuente
+
 function preload() {
   // put preload code here
+  miFuente = loadFont("./fonts/mexcellentrg.otf")
 }
 
 function setup() {
@@ -9,6 +14,10 @@ function setup() {
 
 function draw() {
   // put drawing code here
-  background(255)
-  rect(100,100,200,200)
+  background(0,255,0)
+  //rect(100,100,200,200)
+  textFont(miFuente)
+  textSize(100)
+  fill(255,0,0)
+  text("MEXICO", 100, 100)
 }
